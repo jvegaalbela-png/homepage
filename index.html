@@ -241,13 +241,19 @@
       color: rgba(245,243,238,0.9);
       padding: 15px 56px;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 24px;
       align-items: center;
       font-size: 11px;
       font-weight: 400;
       letter-spacing: 0.06em;
+      white-space: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
     }
+
+    .contact-strip::-webkit-scrollbar { display: none; }
 
     .contact-strip a {
       color: rgba(245,243,238,0.9);
@@ -1030,6 +1036,8 @@
   <a href="tel:+15858024247">(585) 802-4247</a>
   <span class="sep">|</span>
   <a href="https://linktr.ee/jvegaalbela" target="_blank">linktr.ee/jvegaalbela</a>
+  <span class="sep">|</span>
+  <span>Rochester, NY</span>
 </div>
 
 <div class="wrapper">
